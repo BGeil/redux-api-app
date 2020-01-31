@@ -20,8 +20,10 @@ export function invalidateSubreddit(subreddit) {
 }
 
 function requestPosts(subreddit) {
-	type: REQUEST_POSTS,
-	subreddit
+	return {
+		type: REQUEST_POSTS,
+		subreddit
+	}
 }
 
 function receivePosts(subreddit, json) {
